@@ -33,9 +33,4 @@
     text-align: center;
 }
 
-.nama{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(182, 182, 182);
-}
+
