@@ -1,0 +1,41 @@
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.Judul{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    padding: 20px;
+    align-items: center;
+}
+
+.search{
+   width: 30%;
+   height: 23px;
+   position: relative;
+   border-radius: 20px;
+   text-align: left;
+   padding-left:30px;
+   
+}
+.logosearch{
+    background-color:rgb(68, 222, 228);
+    position: absolute;
+    left: 29.7rem;  /* icon di sisi kanan */
+    top: 17.7%;
+    width: 26px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.nama{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(182, 182, 182);
+}
