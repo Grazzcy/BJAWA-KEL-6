@@ -1,1 +1,0 @@
-# BJAWA-KEL-6
