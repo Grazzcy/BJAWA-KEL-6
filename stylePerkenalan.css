@@ -1,19 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url("https://i.ibb.co/5k9GZ7D/batik-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #aa7b52;
 }
 
 .jajan {
     font-size: 45px;
     margin-top: 30px;
     font-weight: bold;
-    color: #4e2a18;
+    color: #472717;
 }
 
 .container2 {
@@ -49,7 +49,7 @@ button {
     margin-top: 30px;
     padding: 12px 35px;
     border-radius: 35px;
-    background-color: #8b5a2b;
+    background-color: #5f4023;
     color: white;
     font-size: 20px;
     border: none;
@@ -58,7 +58,7 @@ button {
 }
 
 button:hover {
-    background-color: #6d431f;
+    background-color: #55381e;
 }
 
 a {
