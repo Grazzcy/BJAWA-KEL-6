@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #f8e9c9 0%, #d4b896 100%);
             min-height: 100vh;
             padding: 20px;
             position: relative;
@@ -24,6 +24,37 @@
             top: 20px;
             right: 20px;
             z-index: 1000;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: 10px;
+        }
+
+        .search-icon-trigger {
+            background: #8b5a2b;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            font-size: 20px;
+            border: none;
+            flex-shrink: 0;
+        }
+
+        .search-icon-trigger:hover {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transform: scale(1.1);
+            background: #5f4023;
+        }
+
+        .search-icon-trigger.active {
+            opacity: 0;
+            pointer-events: none;
         }
 
         .search-box {
@@ -33,7 +64,27 @@
             border-radius: 25px;
             padding: 10px 20px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-            transition: all 0.3s ease;
+            height: 50px;
+            transform: translateX(calc(100% + 60px));
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            pointer-events: none;
+            margin-right: 0;
+        }
+
+        .search-box.active {
+            transform: translateX(0);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .search-box input {
+            width: 200px;
+            transition: width 0.3s ease;
+        }
+
+        .search-box.active input {
+            width: 250px;
         }
 
         .search-box:focus-within {
@@ -51,18 +102,18 @@
         }
 
         .search-box button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #5f4023;
             border: none;
             color: white;
             padding: 8px 15px;
             border-radius: 20px;
             cursor: pointer;
             font-weight: 500;
-            transition: opacity 0.3s ease;
+            transition: background 0.3s ease;
         }
 
         .search-box button:hover {
-            opacity: 0.9;
+            background: #55381e;
         }
 
         .main-content {
@@ -81,11 +132,10 @@
         }
 
         .card {
-            background: white;
+            background: #f8e9c9;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
-                        0 4px 8px rgba(0, 0, 0, 0.15),
-                        0 2px 4px rgba(0, 0, 0, 0.1);
+            border: 3px solid #8b5a2b;
+            box-shadow: 0 5px 20px rgba(50, 35, 20, 0.45);
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
@@ -95,9 +145,7 @@
 
         .card:hover {
             transform: translateX(10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
-                        0 10px 20px rgba(0, 0, 0, 0.25),
-                        0 5px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 30px rgba(50, 35, 20, 0.6);
         }
 
         .card-image {
@@ -121,7 +169,7 @@
         .card-image-icon {
             width: 120px;
             height: 120px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #8b5a2b 0%, #5f4023 100%);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -138,49 +186,259 @@
         .card-title {
             font-size: 24px;
             font-weight: bold;
-            color: #333;
+            color: #4e2a18;
             margin-bottom: 10px;
         }
 
         .card-description {
-            color: #666;
+            color: #683b25;
             line-height: 1.6;
             margin-bottom: 20px;
         }
 
         .card-button {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #5f4023;
             color: white;
             padding: 12px 30px;
             border-radius: 25px;
             text-decoration: none;
-            transition: opacity 0.3s ease;
+            transition: background 0.3s ease;
             font-weight: 500;
         }
 
         .card-button:hover {
-            opacity: 0.9;
+            background: #55381e;
         }
 
         .card-badge {
             display: inline-block;
-            background: #ffd700;
-            color: #333;
+            background: #8b5a2b;
+            color: white;
             padding: 5px 15px;
             border-radius: 20px;
             font-size: 12px;
             font-weight: bold;
             margin-bottom: 15px;
         }
+
+        /* Popup Modal Styles */
+        .popup-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .popup-modal.active {
+            display: flex;
+        }
+
+        .popup-content {
+            background: #f8e9c9;
+            border-radius: 20px;
+            border: 3px solid #8b5a2b;
+            max-width: 80rem;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(50, 35, 20, 0.6);
+            animation: slideUp 0.3s ease;
+            position: relative;
+        }
+
+        .popup-content::before,
+        .popup-content::after {
+            content: '';
+            position: sticky;
+            left: 0;
+            right: 0;
+            height: 50px;
+            pointer-events: none;
+            z-index: 10;
+        }
+
+        .popup-content::before {
+            top: 0;
+            background: linear-gradient(to bottom, 
+                #f8e9c9 0%, 
+                rgba(248, 233, 201, 0.9) 30%,
+                rgba(248, 233, 201, 0.5) 70%,
+                transparent 100%);
+        }
+
+        .popup-content::after {
+            bottom: 0;
+            background: linear-gradient(to top, 
+                #f8e9c9 0%, 
+                rgba(248, 233, 201, 0.9) 30%,
+                rgba(248, 233, 201, 0.5) 70%,
+                transparent 100%);
+            position: sticky;
+            margin-top: -50px;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .popup-header {
+            padding: 30px;
+            border-bottom: 2px solid #f0f0f0;
+            position: relative;
+        }
+
+        .popup-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            color: #999;
+            transition: color 0.3s ease;
+            background: none;
+            border: none;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        .popup-close:hover {
+            color: #333;
+            background: #f0f0f0;
+        }
+
+        .popup-badge {
+            display: inline-block;
+            background: #8b5a2b;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .popup-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4e2a18;
+            margin-bottom: 10px;
+        }
+
+        .popup-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+
+        .popup-body {
+            padding: 30px 30px 30px 30px;
+        }
+
+        .popup-description {
+            color: #683b25;
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .popup-features {
+            background: #fff8e8;
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px solid #d4b896;
+            margin-bottom: 20px;
+        }
+
+        .popup-features h3 {
+            color: #4e2a18;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .popup-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .popup-features li {
+            padding: 10px 0;
+            color: #683b25;
+            border-bottom: 1px solid #d4b896;
+        }
+
+        .popup-features li:last-child {
+            border-bottom: none;
+        }
+
+        .popup-features li:before {
+            content: "✓";
+            color: #8b5a2b;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .popup-footer {
+            padding: 0 30px 30px 30px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .popup-button {
+            flex: 1;
+            background: #5f4023;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .popup-button:hover {
+            background: #55381e;
+        }
+
+        .popup-button.secondary {
+            background: white;
+            color: #5f4023;
+            border: 2px solid #8b5a2b;
+        }
     </style>
 </head>
 <body>
     <!-- Search Box -->
     <div class="search-container">
-        <div class="search-box">
-            <input type="text" placeholder="Cari...">
-            <button>🔍</button>
+        <button class="search-icon-trigger" id="searchTrigger">
+            🔍
+        </button>
+        <div class="search-box" id="searchBox">
+            <input type="text" placeholder="Cari..." id="searchInput">
+            <button id="searchButton">🔍</button>
         </div>
     </div>
 
@@ -284,6 +542,37 @@
         </div>
     </div>
     </div>
+
+    <!-- Popup Modal -->
+    <div class="popup-modal" id="productModal">
+        <div class="popup-content">
+            <div class="popup-header">
+                <button class="popup-close" onclick="closePopup()">×</button>
+                <div class="popup-icon" id="popupIcon">🎨</div>
+                <span class="popup-badge" id="popupBadge">New</span>
+                <h2 class="popup-title" id="popupTitle">Card Design</h2>
+            </div>
+            <div class="popup-body">
+                <p class="popup-description" id="popupDescription">
+                    Card yang menarik dengan desain modern dan responsif.
+                </p>
+                <div class="popup-features">
+                    <h3>✨ Fitur Unggulan:</h3>
+                    <ul id="popupFeatures">
+                        <li>Desain modern dan elegan</li>
+                        <li>Responsif di semua perangkat</li>
+                        <li>Mudah dikustomisasi</li>
+                        <li>Performa optimal</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="popup-button secondary" onclick="closePopup()">Tutup</button>
+                <button class="popup-button" onclick="handleOrder()">Pesan Sekarang</button>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
