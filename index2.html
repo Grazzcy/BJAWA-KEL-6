@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+        }
+
+        .search-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .search-box:focus-within {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 5px 10px;
+            font-size: 16px;
+            width: 250px;
+        }
+
+        .search-box button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border: none;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .search-box button:hover {
+            opacity: 0.9;
+        }
+
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
+                        0 4px 8px rgba(0, 0, 0, 0.15),
+                        0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3),
+                        0 10px 20px rgba(0, 0, 0, 0.25),
+                        0 5px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {
+            width: 150px;
+            height: 150px;
+            min-width: 150px;
+            position: relative;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .card-image-icon {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            border-radius: 15px;
+        }
+
+        .card-content {
+            padding: 25px;
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .card-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+            font-weight: 500;
+        }
+
+        .card-button:hover {
+            opacity: 0.9;
+        }
+
+        .card-badge {
+            display: inline-block;
+            background: #ffd700;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Search Box -->
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Cari...">
+            <button>🔍</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <div class="card-image">
+                <!-- Ganti dengan: <img src="path/to/image.jpg" alt="Card Image"> atau gunakan icon -->
+                <div class="card-image-icon">🎨</div>
+            </div>
+            <div class="card-content">
+                <span class="card-badge">New</span>
+                <h2 class="card-title">Card Design</h2>
+                <p class="card-description">
+                    Card yang menarik dengan desain modern dan responsif. Dilengkapi dengan efek hover yang smooth dan animasi yang elegan.
+                </p>
+                <a href="#" class="card-button">Lihat Selengkapnya</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <div class="card-image">
+                <!-- Ganti dengan: <img src="path/to/image.jpg" alt="Card Image"> atau gunakan icon -->
+                <div class="card-image-icon">🚀</div>
+            </div>
+            <div class="card-content">
+                <span class="card-badge">Popular</span>
+                <h2 class="card-title">Fitur Unggulan</h2>
+                <p class="card-description">
+                    Nikmati pengalaman terbaik dengan fitur-fitur unggulan yang kami tawarkan. Mudah digunakan dan sangat fleksibel.
+                </p>
+                <a href="#" class="card-button">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <div class="card-image">
+                <!-- Ganti dengan: <img src="path/to/image.jpg" alt="Card Image"> atau gunakan icon -->
+                <div class="card-image-icon">⭐</div>
+            </div>
+            <div class="card-content">
+                <span class="card-badge">Featured</span>
+                <h2 class="card-title">Kualitas Terbaik</h2>
+                <p class="card-description">
+                    Kami menjamin kualitas terbaik untuk setiap produk dan layanan yang kami sediakan untuk Anda.
+                </p>
+                <a href="#" class="card-button">Mulai Sekarang</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <div class="card-image">
+                <!-- Ganti dengan: <img src="path/to/image.jpg" alt="Card Image"> atau gunakan icon -->
+                <div class="card-image-icon">💎</div>
+            </div>
+            <div class="card-content">
+                <span class="card-badge">Premium</span>
+                <h2 class="card-title">Layanan Premium</h2>
+                <p class="card-description">
+                    Dapatkan akses eksklusif ke layanan premium dengan berbagai keuntungan dan fitur tambahan yang menarik.
+                </p>
+                <a href="#" class="card-button">Upgrade Sekarang</a>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <div class="card-image">
+                <!-- Ganti dengan: <img src="path/to/image.jpg" alt="Card Image"> atau gunakan icon -->
+                <div class="card-image-icon">🎯</div>
+            </div>
+            <div class="card-content">
+                <span class="card-badge">Best Seller</span>
+                <h2 class="card-title">Pilihan Terfavorit</h2>
+                <p class="card-description">
+                    Produk paling diminati oleh pelanggan kami. Bergabunglah dengan ribuan pengguna yang puas dengan pilihan ini.
+                </p>
+                <a href="#" class="card-button">Dapatkan Sekarang</a>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <div class="card-image">
+                <!-- Ganti dengan: <img src="path/to/image.jpg" alt="Card Image"> atau gunakan icon -->
+                <div class="card-image-icon">🏆</div>
+            </div>
+            <div class="card-content">
+                <span class="card-badge">Award Winner</span>
+                <h2 class="card-title">Pemenang Penghargaan</h2>
+                <p class="card-description">
+                    Dipercaya dan telah memenangkan berbagai penghargaan. Buktikan sendiri mengapa kami menjadi yang terbaik.
+                </p>
+                <a href="#" class="card-button">Coba Gratis</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
