@@ -120,7 +120,7 @@ const productData = {
     'Card Design': {
         icon: '🎨',
         badge: 'New',
-        title: 'Card Design',
+        title: 'ꦒꦸꦝꦼꦒ꧀ (gudeg)',
         description: 'Gudeg punika minangka panganan tradisional saking Ngayogyakarta. Panganan menika dipun damel saking gori enom ingkang dipun masak mawi santan, gula jawa, saha bumbu-bumbu rempah. Rasane legi lan lembut, lan gadhah aroma ingkang khas. Biasanipun gudeg dipun sajiaken kaliyan sega putih, ayam kampung, telur pindang, lan sambel goreng krecek. Panganan menika dados salah satunggaling ciri khas kulinering Yogyakarta ingkang misuwur.',
         features: [
             'Desain modern dan elegan',
@@ -133,7 +133,7 @@ const productData = {
     'Fitur Unggulan': {
         icon: '🚀',
         badge: 'Popular',
-        title: 'Fitur Unggulan',
+        title: 'ꦒꦼꦧ꧀ꦭꦺꦏ꧀ (geblek)',
         description: 'Geblek punika panganan tradisional saking wilayah Kulon Progo. Panganan menika dipun damel saking adonan pati ketela pohon ingkang dipun campur kaliyan bumbu-bumbu prasaja, lajeng dipun bentuk melingkar lan dipun goreng ngantos garing. Rasane gurih saha renggi, lan asring dipun dhahar minangka cemilan utawi panganan saékang dipun iringi banyu teh. Geblek ugi dados salah satunggaling ciri khas kulinering Kulon Progo ingkang taksih dipun tresnani dening masyarakat.',
         features: [
             'Interface yang user-friendly',
@@ -146,7 +146,7 @@ const productData = {
     'Kualitas Terbaik': {
         icon: '⭐',
         badge: 'Featured',
-        title: 'Kualitas Terbaik',
+        title: 'ꦠꦶꦮꦸꦭ꧀ (tiwul)',
         description: 'Tiwul punika panganan tradisional saking masyarakat Jawa, mliginipun ing tlatah Gunungkidul. Panganan menika dipun damel saking gaplek ingkang dipun giling dados oyak, lajeng dipun kukus ngantos mateng. Rasane khas saha gadhah tekstur ingkang lembut nanging rada granula. Tiwul asring dipun sajiaken minangka penggantos sega, lan saged dipun padoni kaliyan sayur, iwak asin, utawi gula jawa miturut selera. Panganan menika nglambangaken kesederhanaan lan kearifan lokal masyarakat.',
         features: [
             'Standar kualitas internasional',
@@ -159,7 +159,7 @@ const productData = {
     'Layanan Premium': {
         icon: '💎',
         badge: 'Premium',
-        title: 'Layanan Premium',
+        title: 'ꦧꦏ꧀ꦥꦶꦲ (bakpia)',
         description: 'Bakpia punika panganan tradisional ingkang misuwur saking kitha Ngayogyakarta. Panganan menika wujud kue alit berisi isen-isen kados ta kacang hijau, coklat, keju, utawi rasa-rasa sanès miturut perkembangan jaman. Kulité tipis lan garing, dene isenipun lembut saha manis. Bakpia asring dipun dadosaken oleh-oleh khas Yogyakarta amargi rasane ingkang nikmat lan dipun remeni kathah tiyang.',
         features: [
             'Akses prioritas ke fitur baru',
@@ -172,7 +172,7 @@ const productData = {
     'Pilihan Terfavorit': {
         icon: '🎯',
         badge: 'Best Seller',
-        title: 'Pilihan Terfavorit',
+        title: 'ꦒꦼꦛꦸꦏ꧀ (gethuk)',
         description: 'Gethuk punika panganan tradisional ingkang asalipun saking bahan ketela pohon. Ketela punika dipun kukus, dipun tumbuk ngantos halus, lajeng dipun campur kaliyan gula jawa utawi gula pasir sarta parutan klapa. Rasane manis, lembut, lan gadhah aroma khas saking bahan alami. Gethuk asring dipun sajiaken minangka cemilan saben dinten lan dados salah satunggaling jajanan tradisional ingkang taksih dipun remeni déning masyarakat.',
         features: [
             'Rating 5 bintang dari pengguna',
@@ -185,7 +185,7 @@ const productData = {
     'Pemenang Penghargaan': {
         icon: '🏆',
         badge: 'Award Winner',
-        title: 'Pemenang Penghargaan',
+        title: 'ꦮꦗꦶꦏ꧀ (wajik)',
         description: 'Wajik punika salah satunggaling panganan tradisional ingkang dipun damel saking beras ketan ingkang dipun masak mawi santan lan gula jawa. Panganan menika gadhah rasa manis lan tekstur ingkang lengket nanging lembut. Wajik asring dipun bentuk dados potongan segi papat lan dipun sajiaken nalika acara-acara adat utawi minangka suguhan dhahar tamu. Panganan menika nggambaraken kesederhanaan lan rasa guyub ing budaya masyarakat Jawa.',
         features: [
             'Pemenang multiple awards',
