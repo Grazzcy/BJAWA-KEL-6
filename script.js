@@ -121,7 +121,7 @@ const productData = {
         icon: '🎨',
         badge: 'New',
         title: 'Card Design',
-        description: 'Card yang menarik dengan desain modern dan responsif. Dilengkapi dengan efek hover yang smooth dan animasi yang elegan. Sempurna untuk menampilkan konten dengan cara yang menarik dan interaktif.',
+        description: 'Gudeg punika minangka panganan tradisional saking Ngayogyakarta. Panganan menika dipun damel saking gori enom ingkang dipun masak mawi santan, gula jawa, saha bumbu-bumbu rempah. Rasane legi lan lembut, lan gadhah aroma ingkang khas. Biasanipun gudeg dipun sajiaken kaliyan sega putih, ayam kampung, telur pindang, lan sambel goreng krecek. Panganan menika dados salah satunggaling ciri khas kulinering Yogyakarta ingkang misuwur.',
         features: [
             'Desain modern dan elegan',
             'Responsif di semua perangkat',
@@ -134,7 +134,7 @@ const productData = {
         icon: '🚀',
         badge: 'Popular',
         title: 'Fitur Unggulan',
-        description: 'Nikmati pengalaman terbaik dengan fitur-fitur unggulan yang kami tawarkan. Mudah digunakan dan sangat fleksibel. Dirancang khusus untuk memenuhi kebutuhan modern Anda.',
+        description: 'Geblek punika panganan tradisional saking wilayah Kulon Progo. Panganan menika dipun damel saking adonan pati ketela pohon ingkang dipun campur kaliyan bumbu-bumbu prasaja, lajeng dipun bentuk melingkar lan dipun goreng ngantos garing. Rasane gurih saha renggi, lan asring dipun dhahar minangka cemilan utawi panganan saékang dipun iringi banyu teh. Geblek ugi dados salah satunggaling ciri khas kulinering Kulon Progo ingkang taksih dipun tresnani dening masyarakat.',
         features: [
             'Interface yang user-friendly',
             'Performa tinggi dan cepat',
@@ -147,7 +147,7 @@ const productData = {
         icon: '⭐',
         badge: 'Featured',
         title: 'Kualitas Terbaik',
-        description: 'Kami menjamin kualitas terbaik untuk setiap produk dan layanan yang kami sediakan untuk Anda. Dipercaya oleh ribuan pengguna di seluruh dunia.',
+        description: 'Tiwul punika panganan tradisional saking masyarakat Jawa, mliginipun ing tlatah Gunungkidul. Panganan menika dipun damel saking gaplek ingkang dipun giling dados oyak, lajeng dipun kukus ngantos mateng. Rasane khas saha gadhah tekstur ingkang lembut nanging rada granula. Tiwul asring dipun sajiaken minangka penggantos sega, lan saged dipun padoni kaliyan sayur, iwak asin, utawi gula jawa miturut selera. Panganan menika nglambangaken kesederhanaan lan kearifan lokal masyarakat.',
         features: [
             'Standar kualitas internasional',
             'Testing menyeluruh sebelum release',
@@ -160,7 +160,7 @@ const productData = {
         icon: '💎',
         badge: 'Premium',
         title: 'Layanan Premium',
-        description: 'Dapatkan akses eksklusif ke layanan premium dengan berbagai keuntungan dan fitur tambahan yang menarik. Tingkatkan produktivitas Anda ke level berikutnya.',
+        description: 'Bakpia punika panganan tradisional ingkang misuwur saking kitha Ngayogyakarta. Panganan menika wujud kue alit berisi isen-isen kados ta kacang hijau, coklat, keju, utawi rasa-rasa sanès miturut perkembangan jaman. Kulité tipis lan garing, dene isenipun lembut saha manis. Bakpia asring dipun dadosaken oleh-oleh khas Yogyakarta amargi rasane ingkang nikmat lan dipun remeni kathah tiyang.',
         features: [
             'Akses prioritas ke fitur baru',
             'Support dedicated personal',
@@ -173,7 +173,7 @@ const productData = {
         icon: '🎯',
         badge: 'Best Seller',
         title: 'Pilihan Terfavorit',
-        description: 'Produk paling diminati oleh pelanggan kami. Bergabunglah dengan ribuan pengguna yang puas dengan pilihan ini. Terbukti efektif dan reliable.',
+        description: 'Gethuk punika panganan tradisional ingkang asalipun saking bahan ketela pohon. Ketela punika dipun kukus, dipun tumbuk ngantos halus, lajeng dipun campur kaliyan gula jawa utawi gula pasir sarta parutan klapa. Rasane manis, lembut, lan gadhah aroma khas saking bahan alami. Gethuk asring dipun sajiaken minangka cemilan saben dinten lan dados salah satunggaling jajanan tradisional ingkang taksih dipun remeni déning masyarakat.',
         features: [
             'Rating 5 bintang dari pengguna',
             'Paling banyak dipilih',
@@ -186,7 +186,7 @@ const productData = {
         icon: '🏆',
         badge: 'Award Winner',
         title: 'Pemenang Penghargaan',
-        description: 'Dipercaya dan telah memenangkan berbagai penghargaan. Buktikan sendiri mengapa kami menjadi yang terbaik. Diakui oleh industri dan pengguna.',
+        description: 'Wajik punika salah satunggaling panganan tradisional ingkang dipun damel saking beras ketan ingkang dipun masak mawi santan lan gula jawa. Panganan menika gadhah rasa manis lan tekstur ingkang lengket nanging lembut. Wajik asring dipun bentuk dados potongan segi papat lan dipun sajiaken nalika acara-acara adat utawi minangka suguhan dhahar tamu. Panganan menika nggambaraken kesederhanaan lan rasa guyub ing budaya masyarakat Jawa.',
         features: [
             'Pemenang multiple awards',
             'Sertifikasi internasional',
