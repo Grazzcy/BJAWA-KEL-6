@@ -585,6 +585,32 @@
         </div>
     </div>
 
+    <!-- Back Button (Static at bottom) -->
+    <div style="margin: 18px;">
+        <a href="index.html" style="text-decoration: none; display: inline-block;">
+            <button style="
+                background: #8b5a2b;
+                color: white;
+                border: none;
+                padding: 12px 25px;
+                border-radius: 25px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            " 
+            onmouseover="this.style.background='#5f4023'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.3)'"
+            onmouseout="this.style.background='#8b5a2b'; this.style.transform='scale(1)'; this.style.boxShadow='0 5px 20px rgba(0, 0, 0, 0.2)'">
+                <span>←</span>
+                <span>Kembali ke Halaman 1</span>
+            </button>
+        </a>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
