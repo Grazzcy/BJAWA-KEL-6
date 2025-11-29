@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 noResultsMsg.innerHTML = `
                     <div style="text-align: center; padding: 40px; color: white; font-size: 18px;">
                         <p style="font-size: 48px; margin-bottom: 10px;">🔍</p>
-                        <p style="font-weight: bold; margin-bottom: 10px;">Tidak ada hasil ditemukan</p>
-                        <p style="font-size: 14px; opacity: 0.8;">Coba kata kunci lain</p>
+                        <p style="font-weight: bold; margin-bottom: 10px;">Mboten wonten kasil dipunpanggihaken</p>
+                        <p>Nyuwun pangapunten, produk kanthi jeneng "<strong>${searchTerm}</strong>" mboten kapanggih. Mangga coba tembung kunci sanès.</p>
                     </div>
                 `;
                 container.appendChild(noResultsMsg);

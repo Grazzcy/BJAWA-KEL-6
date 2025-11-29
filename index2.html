@@ -11,7 +11,7 @@
             box-sizing: border-box;
         }
 
-        body {
+        body {  
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #f8e9c9 0%, #d4b896 100%);
             min-height: 100vh;
@@ -93,15 +93,21 @@
             align-items: center;
         }
 
+        .card:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
         .card:hover {
             transform: translateX(10px);
             box-shadow: 0 8px 30px rgba(50, 35, 20, 0.6);
         }
 
+        .card:nth-child(even):hover {
+            transform: translateX(-10px);
+        }
+
         .card-image {
-            width: 150px;
-            height: 150px;
-            min-width: 150px;
+            flex: 0 0 25%;
             position: relative;
             padding: 15px;
             display: flex;
@@ -117,8 +123,8 @@
         }
 
         .card-image-icon {
-            width: 120px;
-            height: 120px;
+            width: 100%;
+            height: 250px;
             background: linear-gradient(135deg, #8b5a2b 0%, #5f4023 100%);
             display: flex;
             align-items: center;
@@ -130,11 +136,15 @@
 
         .card-content {
             padding: 25px;
-            flex: 1;
+            flex: 0 0 75%;
+        }
+
+        .card:nth-child(even) .card-content {
+            text-align: right;
         }
 
         .card-title {
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
             color: #4e2a18;
             margin-bottom: 10px;
@@ -241,6 +251,9 @@
             padding: 30px;
             border-bottom: 2px solid #f0f0f0;
             position: relative;
+            display: flex;
+            align-items: center;
+            gap: 25px;
         }
 
         .popup-close {
@@ -271,12 +284,19 @@
             font-size: 32px;
             font-weight: bold;
             color: #4e2a18;
-            margin-bottom: 10px;
+            margin: 0;
         }
 
         .popup-icon {
             font-size: 80px;
-            margin-bottom: 20px;
+            flex-shrink: 0;
+        }
+
+        .popup-icon img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
         }
 
         .popup-body {
