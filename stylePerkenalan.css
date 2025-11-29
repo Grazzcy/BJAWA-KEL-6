@@ -32,7 +32,7 @@ body {
 }
 
 .title {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
     color: #4e2a18;
@@ -64,3 +64,4 @@ button:hover {
 a {
     text-decoration: none;
 }
+
