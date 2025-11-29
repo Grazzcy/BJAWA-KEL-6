@@ -1,102 +1,249 @@
-body {
-    font-family: Arial, sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+/* ================= RESET ================= */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Times New Roman", serif;
+}
+
+/* ================= BACKGROUND ================= */
+.back {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.back2 {
+    background-image: url('back2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* ================= SECTION GENERAL ================= */
+.halaman {
+    padding: 40px 20px;
+}
+
+.judul-atas {
+    font-family: "Javanese Text", serif;
     text-align: center;
-    background-color:#af8867 ;
+    font-size: 50px;
 }
 
-.jajan {
-    font-size: 45px;
-    margin-top: 30px;
-    font-weight: bold;
-    color: #000000;
-}
-
-.container2 {
+/* ================= HALAMAN 1 ================= */
+.konten-row {
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
+    background-color: #d4a375;
+    min-height: 25rem;
+    border: 2px solid #b3916e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
 }
 
-.card {
-    width: 60%;
-    background: #f8e9c9;
-    padding: 35px;
-    border-radius: 25px;
-    border: 3px solid #8b5a2b;
-    box-shadow: 0 5px 20px rgba(50, 35, 20, 0.45);
+.box-teks {
+    padding: 25px;
+    border-radius: 30px;
+    width: 35rem;
+    max-width: 100%;
+    margin-top: 4rem;
+    font-size: 25px;
 }
 
-.title {
-    font-size: 32px;
-    font-weight: bold;
+.judul-aksara {
+    font-size: 35px;
+}
+
+.deskripsi {
+    margin-bottom: 5rem;
+}
+
+.gambar-makanan {
+    width: 20rem;
+    height: 20rem;
+    max-width: 100%;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    object-fit: cover;
+}
+
+/* ================= HALAMAN 2 ================= */
+.kertas {
+    background: #f8f5ef;
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid #b3916e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     margin-bottom: 20px;
-    color: #4e2a18;
 }
 
-.card ul {
-    text-align: left;
-    padding-left: 20px;
+.judul-box {
+    background: #fff;
+    width: fit-content;
+    padding: 10px 25px;
+    margin: 0 auto 20px;
+    border-radius: 20px;
     font-size: 22px;
-    line-height: 1.9;
+    font-family: "Javanese Text";
+    border: 2px solid #b3916e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
 }
 
-button {
-    margin-top: 30px;
-    padding: 12px 35px;
-    border-radius: 35px;
-    background-color: #5f4023;
-    color: white;
-    font-size: 20px;
+/* ================= HALAMAN 3 ================= */
+.list-box {
+    background: #fff;
+    width: fit-content;
+    padding: 10px 25px;
+    margin: 0 auto 20px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: "Javanese Text";
+    border: 2px solid #b3916e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.judul-list {
+    background: #fff;
+    width: fit-content;
+    padding: 10px 25px;
+    margin: 200px auto 20px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: "Javanese Text";
+    border: 2px solid #b3916e;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.btn {
+    margin-top: 20px;
+    display: block;
+    background: #d9b07a;
+    padding: 10px 25px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-button:hover {
-    background-color: #55381e;
+/* ===================================================== */
+/*                   RESPONSIVE DESIGN                   */
+/* ===================================================== */
+
+/* ---------- 1. TABLET (max-width: 992px) ---------- */
+@media (max-width: 992px) {
+
+    .judul-atas {
+        font-size: 40px;
+    }
+
+    .konten-row {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .gambar-makanan {
+        margin: 0 auto;
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .box-teks {
+        font-size: 22px;
+        margin-top: 1rem;
+    }
 }
 
-a {
-    text-decoration: none;
-}
-
-.g1{
-    width: 100%;
-    margin: 30px;
-    opacity: .6;
-    border-radius: 15px;
-    border: 2px solid #8b5a2b;
-    box-shadow: -2px 4px 2px 4px rgba(0,0,0,0.4);
-}
-
-.welcome{
-    background-color:#af8867 ;
-    width: 19rem;
-    height: 10rem;
-    position: absolute;
-    top: 20rem;
-    left: 18rem;
-    border-radius: 20px;
-    border: 2px solid #8b5a2b;
-    box-shadow: -2px 4px 2px 4px rgba(0,0,0,0.4);
-    
-}
-
-h3{
-    font-size: 20px;
-}
-
+/* ---------- 2. MOBILE (max-width: 768px) ---------- */
 @media (max-width: 768px) {
-  .header {
-    font-size: 18px;
-  }
 
-  .card {
-    width: 100%;
-  }
+    .judul-atas {
+        font-size: 32px;
+    }
+
+    .konten-row {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .box-teks {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .judul-aksara {
+        font-size: 25px;
+    }
+
+    .gambar-makanan {
+        width: 14rem;
+        height: 14rem;
+    }
+
+    .judul-list,
+    .judul-box,
+    .list-box {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+
+    .btn {
+        padding: 8px 18px;
+        font-size: 15px;
+    }
+}
+
+/* ---------- 3. SMALL MOBILE (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+
+    .judul-atas {
+        font-size: 26px;
+    }
+
+    .konten-row {
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .box-teks {
+        font-size: 16px;
+    }
+
+    .gambar-makanan {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    .judul-aksara {
+        font-size: 22px;
+    }
+
+    .deskripsi {
+        margin-bottom: 2rem;
+    }
+
+    .judul-list,
+    .judul-box {
+        font-size: 16px;
+    }
+
+    .list-box {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 7px 15px;
+    }
 }
