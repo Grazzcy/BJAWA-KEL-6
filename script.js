@@ -1,33 +1,4 @@
-// Toggle Search Box
-document.addEventListener('DOMContentLoaded', function() {
-    const searchTrigger = document.getElementById('searchTrigger');
-    const searchBox = document.getElementById('searchBox');
-    const searchInput = document.getElementById('searchInput');
 
-    searchTrigger.addEventListener('click', function() {
-        searchBox.classList.add('active');
-        searchTrigger.classList.add('active');
-        setTimeout(() => {
-            searchInput.focus();
-        }, 200);
-    });
-
-    // Close search box when clicking outside
-    document.addEventListener('click', function(e) {
-        if (!searchTrigger.contains(e.target) && !searchBox.contains(e.target)) {
-            searchBox.classList.remove('active');
-            searchTrigger.classList.remove('active');
-        }
-    });
-
-    // Close with Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && searchBox.classList.contains('active')) {
-            searchBox.classList.remove('active');
-            searchTrigger.classList.remove('active');
-        }
-    });
-});
 
 // Fungsi Search untuk memfilter card
 document.addEventListener('DOMContentLoaded', function() {
@@ -42,10 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
         cards.forEach(card => {
             const title = card.querySelector('.card-title').textContent.toLowerCase();
             const description = card.querySelector('.card-description').textContent.toLowerCase();
-            const badge = card.querySelector('.card-badge').textContent.toLowerCase();
 
-            // Cek apakah search term ada di title, description, atau badge
-            if (title.includes(searchTerm) || description.includes(searchTerm) || badge.includes(searchTerm)) {
+            // Cek apakah search term ada di title atau description
+            if (title.includes(searchTerm) || description.includes(searchTerm)) {
                 card.style.display = 'flex';
                 // Tambahkan animasi fade in
                 card.style.animation = 'fadeIn 0.3s ease';
@@ -199,8 +169,11 @@ const productData = {
 
 // Fungsi untuk membuka popup
 function openPopup(productTitle) {
+    console.log('openPopup called with:', productTitle); // Debug
     const modal = document.getElementById('productModal');
     const product = productData[productTitle];
+    
+    console.log('Product found:', product); // Debug
     
     if (product) {
         // Update konten popup
@@ -212,7 +185,6 @@ function openPopup(productTitle) {
             popupIcon.textContent = product.icon;
         }
         
-        document.getElementById('popupBadge').textContent = product.badge;
         document.getElementById('popupTitle').textContent = product.title;
         document.getElementById('popupDescription').textContent = product.description;
         
@@ -228,6 +200,9 @@ function openPopup(productTitle) {
         // Show modal
         modal.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent scrolling
+        console.log('Modal activated'); // Debug
+    } else {
+        console.error('Product not found for title:', productTitle); // Debug
     }
 }
 
@@ -238,29 +213,9 @@ function closePopup() {
     document.body.style.overflow = 'auto'; // Re-enable scrolling
 }
 
-// Fungsi handle order
-function handleOrder() {
-    const productTitle = document.getElementById('popupTitle').textContent;
-    alert(`Terima kasih! Anda akan memesan: ${productTitle}\n\nFitur ini akan mengarahkan Anda ke halaman checkout.`);
-    closePopup();
-}
-
-// Close popup when clicking outside
-document.getElementById('productModal').addEventListener('click', function(e) {
-    if (e.target === this) {
-        closePopup();
-    }
-});
-
-// Close popup with Escape key
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        closePopup();
-    }
-});
-
-// Add event listeners to all card buttons
+// Initialize popup functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Add event listeners to all card buttons
     const cardButtons = document.querySelectorAll('.card-button');
     
     cardButtons.forEach(button => {
@@ -268,7 +223,25 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             const card = this.closest('.card');
             const productTitle = card.querySelector('.card-title').textContent;
+            console.log('Opening popup for:', productTitle); // Debug
             openPopup(productTitle);
         });
+    });
+    
+    // Close popup when clicking outside
+    const productModal = document.getElementById('productModal');
+    if (productModal) {
+        productModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePopup();
+            }
+        });
+    }
+    
+    // Close popup with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closePopup();
+        }
     });
 });
