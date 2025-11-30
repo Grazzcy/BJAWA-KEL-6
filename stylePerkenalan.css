@@ -6,22 +6,72 @@
     font-family: "Times New Roman", serif;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
 /* ================= BACKGROUND ================= */
 .back {
-    background-image: url('background.png');
+    background-image: url('background-hal-1.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    scroll-snap-align: start;
+    min-width: 100vh;
+    min-height: 100vh;
 }
 
 .back2 {
-    background-image: url('back2.png');
+    background-image: url('background-hal-1.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    scroll-snap-align: start;
+    min-width: 100vh;
+    min-height: 100vh;
 }
 
 /* ================= SECTION GENERAL ================= */
 .halaman {
     padding: 40px 20px;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUpFade 0.8s ease-out forwards;
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.halaman1 {
+    animation-delay: 0.2s;
+}
+
+.halaman2 {
+    animation-delay: 0.2s;
+}
+
+.halaman3 {
+    animation-delay: 0.2s;
 }
 
 .judul-atas {
@@ -30,12 +80,23 @@
     font-size: 50px;
 }
 
+/* ================= ANIMASI SCROLL ================= */
+.animate-element {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-element.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* ================= HALAMAN 1 ================= */
 .konten-row {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
     flex-wrap: wrap;
     background-color: #d4a375;
     min-height: 25rem;
@@ -44,13 +105,13 @@
     border-radius: 20px;
     width: 90%;
     margin: 50px auto;
-    padding: 20px;
+    padding: 0px;
 }
 
 .box-teks {
     padding: 25px;
     border-radius: 30px;
-    width: 35rem;
+    width: 45%;
     max-width: 100%;
     margin-top: 4rem;
     font-size: 25px;
@@ -67,14 +128,20 @@
 .gambar-makanan {
     width: 20rem;
     height: 20rem;
-    max-width: 100%;
+    max-width: 45%;
     border-radius: 50%;
-    margin-left: 20px;
     margin-bottom: 50px;
     object-fit: cover;
 }
 
 /* ================= HALAMAN 2 ================= */
+.halaman2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .kertas {
     background: #f8f5ef;
     padding: 25px;
@@ -82,6 +149,8 @@
     border: 2px solid #b3916e;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     margin-bottom: 20px;
+    max-width: 90%;
+    width: 100%;
 }
 
 .judul-box {
@@ -113,12 +182,16 @@
     background: #fff;
     width: fit-content;
     padding: 10px 25px;
-    margin: 200px auto 20px;
+    margin: 80px auto 20px;
     border-radius: 20px;
     font-size: 22px;
     font-family: "Javanese Text";
     border: 2px solid #b3916e;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+.list-box a {
+    text-decoration: none;
 }
 
 .btn {
@@ -132,6 +205,11 @@
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
+    color: #000;
+}
+
+.btn:hover {
+    background: #c9a169;
 }
 
 ol {
@@ -182,17 +260,6 @@ ol {
         width: 90%;
         font-size: 18px;
     }
-    .back {
-    background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.back2 {
-    background-image: url('back2.png');
-    background-size: cover;
-    background-position: center;
-}
 }
 
 
@@ -218,17 +285,6 @@ ol {
     .judul-aksara {
         font-size: 22px;
     }
-    .back {
-    background-image: url('background.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.back2 {
-    background-image: url('back2.png');
-    background-size: cover;
-    background-position: center;
-}
 }
 
 
