@@ -91,78 +91,78 @@ const productData = {
         icon: 'gudheg.jpeg',
         badge: 'New',
         title: 'ꦒꦸꦝꦼꦒ꧀ (gudeg)',
-        description: 'Gudeg punika minangka panganan tradisional saking Ngayogyakarta. Panganan menika dipun damel saking gori enom ingkang dipun masak mawi santan, gula jawa, saha bumbu-bumbu rempah. Rasane legi lan lembut, lan gadhah aroma ingkang khas. Biasanipun gudeg dipun sajiaken kaliyan sega putih, ayam kampung, telur pindang, lan sambel goreng krecek. Panganan menika dados salah satunggaling ciri khas kulinering Yogyakarta ingkang misuwur.',
+        description: 'Gudeg punika salah satunggaling panganan khas saking kitha Yogyakarta. Panganan punika kawiwitan wonten abad kaping-16 nalika pambangunan Kraton Mataram ing Alas Mentaok. Wonten ing wekdal punika, kathah wit nangka, kluthuk, saha tangkil ingkang dipun-ginakaken para abdi saha para prajurit kangge masak bebarengan. Nangka enom punika lajeng dipun-godhok kalihan santan, gula jawa, lan bumbu-bumbu ingkang prasaja, lajeng dados panganan kanthi rasa manis gurih ingkang sinebat gudeg. Sakmensahipun, gudeg dados dhaharan khas Yogyakarta lan saya misuwur ing salebeting Nusantara.',
         features: [
-            'Asalipun saking kitha Yogyakarta.',
-            'Kawiwitan abad kaping-16 nalika pambangunan Kraton Mataram.',
-            'Dipun-ginakaken para abdi lan prajurit kangge dhaharan bebarengan.',
-            'Gadhah ciri rasa manis-gurih khas Yogyakarta.',
-            'Dados panganan khas Yogyakarta ingkang misuwur dumugi samenika.'
+            'Gudeg asring dipun sebat "dhaharan paling legi wonten ing Tanah Jawa" amargi rasane manis sanget.',
+            'Wiyosane dipun masak pirang-pirang jam wonten ing kendhil tanah liat, saéngga gadhah ambu khas.',
+            'Wonten gudeg kering lan gudeg teles, mawi bedanipun wonten ing cara masakipun.',
+            'Daun jati dipun-ginakaken supados warna gudeg coklat alami.',
+            'Wonten ing Yogyakarta gadhah Kampung Gudeg ingkang misuwur amargi kathah penjualipun.'
         ]
     },
     'ꦒꦼꦧ꧀ꦭꦺꦏ꧀ (geblek)': {
         icon: 'geblek.jpeg',
         badge: 'Popular',
         title: 'ꦒꦼꦧ꧀ꦭꦺꦏ꧀ (geblek)',
-        description: 'Geblek punika panganan tradisional saking wilayah Kulon Progo. Panganan menika dipun damel saking adonan pati ketela pohon ingkang dipun campur kaliyan bumbu-bumbu prasaja, lajeng dipun bentuk melingkar lan dipun goreng ngantos garing. Rasane gurih saha renggi, lan asring dipun dhahar minangka cemilan utawi panganan saékang dipun iringi banyu teh. Geblek ugi dados salah satunggaling ciri khas kulinering Kulon Progo ingkang taksih dipun tresnani dening masyarakat.',
+        description: 'Geblek punika panganan tradisional saking wewengkon Kulon Progo, DIY. Panganan punika damel saking aci singka lan dipun-uleg bareng bumbu bawang, lajeng dipunbentuk kados angka wolu lan dipun-goreng. Miturut crita tradisi, geblek sampun wonten wiwit jaman biyèn nalika masyarakat tani ing Kulon Progo ndamel olahan saking pati singka kanggé cemilan ingkang awet lan trep kanggé dhaharan sanèsipun. Rasanipun gurih lan garing, dados nambah kawentaripun minangka jajanan khas ingkang dados identitas kulinèr Kulon Progo dumugi samenika.',
         features: [
-            'Asalipun saking Kulon Progo, DIY.',
-            'Wonten wiwit jaman biyèn minangka cemilan masyarakat tani.',
-            'Bentukipun khas kados angka wolu.',
-            'Gadhah rasa gurih lan garing.',
-            'Dados jajanan khas Kulon Progo ingkang dados identitas kulinèripun.'
+            'Wonten ingkang ngendika bilih wujud geblek punika mirip angka wolu (8) utawi lambang tanpa wates.',
+            'Dipun damel saking pati ketela pohon murni, saéngga teksturipun kenyal lan gurih.',
+            'Asring dipun padoni kaliyan tempe bacem minangka panganan panyangga.',
+            'Warna putihipun asal saking bahan alami, tanpa pewarna sintetik.',
+            'Dados cemilan rakyat ing jaman rumiyin, asring dipun bawa déning petani dhateng sawah.'
         ]
     },
     'ꦠꦶꦮꦸꦭ꧀ (tiwul)': {
         icon: 'tiwul.jpeg',
         badge: 'Featured',
         title: 'ꦠꦶꦮꦸꦭ꧀ (tiwul)',
-        description: 'Tiwul punika panganan tradisional saking masyarakat Jawa, mliginipun ing tlatah Gunungkidul. Panganan menika dipun damel saking gaplek ingkang dipun giling dados oyak, lajeng dipun kukus ngantos mateng. Rasane khas saha gadhah tekstur ingkang lembut nanging rada granula. Tiwul asring dipun sajiaken minangka penggantos sega, lan saged dipun padoni kaliyan sayur, iwak asin, utawi gula jawa miturut selera. Panganan menika nglambangaken kesederhanaan lan kearifan lokal masyarakat.',
+        description: 'Tiwul punika dhaharan tradisional saking gampingan Jawa, utaminipun ing wewengkon Gunungkidul, Wonogiri, lan Pacitan. Tiwul kawiwitan minangka dhaharan pokok nalika jaman biyèn, amargi masyarakat ing daerah tandus awrat angsal beras. Wonten ing wekdal punika, masyarakat ngginakaken gaplek, yaiku ketela pohung ingkang dipun-jemur nganti garing, lajeng dipun-giling dados glepung lan dipun-olah dados tiwul. Rasanipun gampil, legi alami, lan saged ngenyangaken. Dumugi samenika, tiwul tetep dados salah satunggaling panganan khas ingkang nggambaraken kearifan lokal masyarakat gampingan.',
         features: [
-            'Asalipun saking daerah gampingan Jawa (Gunungkidul, Wonogiri, Pacitan).',
-            'Wonten jaman biyèn dados pangan pokok nalika kakirangan beras.',
-            'Rasanipun legi alami lan ngenyangaken.',
-            'Dipun-sebat minangka panganan khas masyarakat pegunungan.',
-            'Taksih lestari minangka panganan tradisional dumugi samenika.'
+            'Tiwul nate dados dhaharan pokok masyarakat Gunungkidul minangka penggantos sega.',
+            'Dipun damel saking gaplek ingkang dipun giling alit sanget.',
+            'Dipun pitados langkung sehat tinimbang sega putih amargi kadar gulane langkung andhap.',
+            'Saged dipun sajiaken manis kaliyan gula jawa utawi gurih kaliyan iwak asin.',
+            'Tiwul dados simbol kesederhanaan lan ketahanan pangan masyarakat.'
         ]
     },
     'ꦧꦏ꧀ꦥꦶꦲ (bakpia)': {
         icon: 'bakpia.jpeg',
         badge: 'Premium',
         title: 'ꦧꦏ꧀ꦥꦶꦲ (bakpia)',
-        description: 'Bakpia punika panganan tradisional ingkang misuwur saking kitha Ngayogyakarta. Panganan menika wujud kue alit berisi isen-isen kados ta kacang hijau, coklat, keju, utawi rasa-rasa sanès miturut perkembangan jaman. Kulité tipis lan garing, dene isenipun lembut saha manis. Bakpia asring dipun dadosaken oleh-oleh khas Yogyakarta amargi rasane ingkang nikmat lan dipun remeni kathah tiyang.',
+        description: 'Bakpia punika jajanan ingkang asal-usulipun saking Tiongkok. Wonten ing asalipun, panganan punika sinebat tou luk pia, ingkang tegesipun roti cilik isi kacang ijo. Ing abad kaping-20, para perantau Tionghoa ing Yogyakarta miwiti ngolah lan ngasilaken bakpia kanthi cara ingkang langkung trep kaliyan selera masyarakat lokal. Salah satunggaling kampung ing Yogyakarta, inggih punika Kampung Pathuk, lajeng dados pusat pabrikan bakpia lan misuwur dumugi jaman samenika. Saking mriku, bakpia dados salah satunggaling oleh-oleh khas Yogyakarta ingkang kondhang amargi rasane empuk, legi, lan kathah variasinipun.',
         features: [
-            'Asal-usulipun saking jajanan Tiongkok.',
-            'Dipun-ngrembakaaken dening perantau Tionghoa ing Yogyakarta.',
-            'Kampung Pathuk dados pusat pabrikan bakpia.',
-            'Rasanipun empuk lan legi kanthi kathah variasi.',
-            'Dados oleh-oleh khas Yogyakarta ingkang kondhang.'
+            'Asal-usul bakpia punika saking panganan Tionghoa "tou luk pia", ingkang lajeng kasil adaptasi dados rasa lokal.',
+            'Bakpia Pathok punika ingkang sepindhah misuwur wonten ing Yogyakarta.',
+            'Rumiyin namung wonten isen kacang ijo, sapunika kathah varian moderen.',
+            'Sentra produksi bakpia saged ndamel ewonan butir saben dinten.',
+            'Wujudipun alit supados gampil kanggé dipun dhahar sak gigitan.'
         ]
     },
     'ꦒꦼꦛꦸꦏ꧀ (gethuk)': {
         icon: 'getuk.jpeg',
         badge: 'Best Seller',
         title: 'ꦒꦼꦛꦸꦏ꧀ (gethuk)',
-        description: 'Gethuk punika panganan tradisional ingkang asalipun saking bahan ketela pohon. Ketela punika dipun kukus, dipun tumbuk ngantos halus, lajeng dipun campur kaliyan gula jawa utawi gula pasir sarta parutan klapa. Rasane manis, lembut, lan gadhah aroma khas saking bahan alami. Gethuk asring dipun sajiaken minangka cemilan saben dinten lan dados salah satunggaling jajanan tradisional ingkang taksih dipun remeni déning masyarakat.',
+        description: 'Gethuk punika jajanan tradisional saking tanah Jawa, utaminipun dipun-gadahi dening masyarakat pedesaan. Panganan punika asalipun saking kabiasaan masyarakat ngolah ketela pohung (singkong) minangka sumber pangan alternatif nalika kesulitan pikantuk beras jaman biyèn. Ketela pohung punika dipun-godhog, dipun-uleg, lajeng dipun-campur gula jawa utawi gula pasir saha dipun-paringi rasa. Gethuk lajeng dipun-bentuk prasaja lan dipun-sajikaken kalawan parutan klapa. Wonten ing sawetawis daerah, gethuk dados ciri khas kados ta Gethuk Lindri ing Magelang, ingkang warna-warni lan dipun-giling ngagem mesin khusus. Dumugi samenika, gethuk tetep dados jajanan ingkang dipun-remeni amargi rasanipun sederhana nanging ngelingake dhateng tradisi lawas.',
         features: [
-            'Asalipun saking tradisi masyarakat pedesaan Jawa.',
-            'Wonten minangka pangan alternatif jaman biyèn.',
-            'Gadhah tekstur lembut lan rasa prasaja.',
-            'Dipun-sajikaken kanthi bentuk sederhana.',
-            'Varian misuwuripun inggih punika Gethuk Lindri saking Magelang.'
+            'Gethuk dados panganan khas ing tlatah pegunungan amargi ketela pohon ngrembaka kathah.',
+            'Gethuk lindri gadhah warna cerah saking pangan alami kados pandan utawi gula jawa.',
+            'Pembentukane migunakaken mesin penggiling mie supados gadhah garis-garis khas.',
+            'Naté misuwur dados oleh-oleh utama saking Magelang.',
+            'Rumiyin asring dipun dhahar minangka sarapan penggantos sega.'
         ]
     },
     'ꦮꦗꦶꦏ꧀ (wajik)': {
         icon: 'wajik.jpeg',
         badge: 'Award Winner',
         title: 'ꦮꦗꦶꦏ꧀ (wajik)',
-        description: 'Wajik punika salah satunggaling panganan tradisional ingkang dipun damel saking beras ketan ingkang dipun masak mawi santan lan gula jawa. Panganan menika gadhah rasa manis lan tekstur ingkang lengket nanging lembut. Wajik asring dipun bentuk dados potongan segi papat lan dipun sajiaken nalika acara-acara adat utawi minangka suguhan dhahar tamu. Panganan menika nggambaraken kesederhanaan lan rasa guyub ing budaya masyarakat Jawa.',
+        description: 'Wajik punika panganan tradisional saking masyarakat Jawa ingkang sampun wonten wiwit jaman biyèn. Panganan punika damel saking beras ketan ingkang dipun-aron kalihan gula jawa lan santan, lajeng dipun-olah dumugi kental lan dipun-bentuk kados belah ketupat. Ing budaya Jawa, wajik asring dipun-ginakaken minangka panganan upacara, amargi maknanipun nyarujuki “kekompakan” lan “panyawiji” antarane warga. Amargi rasanipun legi lan gampil kacicipi, wajik dados salah satunggaling jajanan tradisional ingkang tetep lestari dumugi samenika, utaminipun ing acara adat lan kendhuri.',
         features: [
-            'Jajanan tradisional Jawa saking jaman biyèn.',
-            'Dipun-bentuk khas kados belah ketupat.',
-            'Asring dipun-hidangaken wonten upacara adat.',
-            'Gadhah makna kekompakan lan panyawiji.',
-            'Taksih lestari ing acara adat lan kendhuri dumugi samenika.'
+            'Wajik dipun anggep minangka simbol kerukunan lan kekompakan amargi teksture lengket – pralambangipun guyub.',
+            'Asring kapanggih wonten ing acara adat Jawa, kados slametan lan hajatan.',
+            'Proses masakipun dangu amargi ketan kedah nyerap santan lan gula kanthi sampurna.',
+            'Warna coklatipun saking gula jawa asli tanpa pewarna tambahan.',
+            'Kadhangkala wonten variasi unik kados wajik ketan ireng.'
         ]
     }
 };
