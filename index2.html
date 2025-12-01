@@ -29,7 +29,7 @@
         .search-box {
             display: flex;
             align-items: center;
-            background: white;
+            background: #f8e9c9;
             border-radius: 25px;
             padding: 10px 20px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
@@ -327,12 +327,14 @@
         .popup-features ul {
             list-style: none;
             padding: 0;
+            counter-reset: feature-counter;
         }
 
         .popup-features li {
             padding: 10px 0;
             color: #683b25;
             border-bottom: 1px solid #d4b896;
+            counter-increment: feature-counter;
         }
 
         .popup-features li:last-child {
@@ -340,7 +342,7 @@
         }
 
         .popup-features li:before {
-            content: "✓";
+            content: counter(feature-counter) ". ";
             color: #8b5a2b;
             font-weight: bold;
             margin-right: 10px;
@@ -369,6 +371,208 @@
 
         .popup-button:hover {
             background: #55381e;
+        }
+
+        /* ================= ANIMASI SCROLL ================= */
+        .animate-element {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .animate-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ================= RESPONSIVE MOBILE ================= */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .search-container {
+                position: fixed;
+                top: 10px;
+                left: 10px;
+                right: 10px;
+                width: auto;
+            }
+
+            .search-box {
+                width: 100%;
+                padding: 8px 15px;
+                height: 45px;
+            }
+
+            .search-box input {
+                width: 100%;
+                font-size: 14px;
+            }
+
+            .search-box button {
+                padding: 6px 12px;
+                font-size: 14px;
+            }
+
+            .main-content {
+                padding-top: 70px;
+                min-height: auto;
+            }
+
+            .container {
+                gap: 15px;
+                padding: 0 5px;
+            }
+
+            .card {
+                flex-direction: column !important;
+                align-items: stretch;
+            }
+
+            .card:nth-child(even) {
+                flex-direction: column !important;
+            }
+
+            .card:hover,
+            .card:nth-child(even):hover {
+                transform: translateY(-5px);
+            }
+
+            .card-image {
+                flex: 0 0 auto;
+                width: 100%;
+                padding: 15px 15px 0 15px;
+            }
+
+            .card-image-icon {
+                width: 100%;
+                height: 200px;
+            }
+
+            .card-content {
+                flex: 1;
+                padding: 20px 15px;
+                text-align: left !important;
+            }
+
+            .card:nth-child(even) .card-content {
+                text-align: left !important;
+            }
+
+            .card-title {
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+
+            .card-description {
+                font-size: 14px;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+
+            .card-button {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            /* Popup Mobile */
+            .popup-content {
+                width: 95%;
+                max-height: 90vh;
+                border-radius: 15px;
+            }
+
+            .popup-header {
+                flex-direction: column;
+                padding: 20px;
+                gap: 15px;
+            }
+
+            .popup-icon {
+                font-size: 60px;
+                order: -1;
+            }
+
+            .popup-icon img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .popup-title {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .popup-close {
+                top: 10px;
+                right: 10px;
+                font-size: 28px;
+                width: 35px;
+                height: 35px;
+            }
+
+            .popup-body {
+                padding: 20px;
+            }
+
+            .popup-description {
+                font-size: 14px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .popup-features {
+                padding: 20px;
+                margin-bottom: 15px;
+            }
+
+            .popup-features h3 {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+
+            .popup-features li {
+                padding: 8px 0;
+                font-size: 14px;
+            }
+
+            .popup-footer {
+                padding: 0 20px 20px 20px;
+            }
+
+            .popup-button {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-title {
+                font-size: 20px;
+            }
+
+            .card-description {
+                font-size: 13px;
+            }
+
+            .card-image-icon {
+                height: 180px;
+            }
+
+            .popup-icon img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .popup-title {
+                font-size: 20px;
+            }
+
+            .popup-description,
+            .popup-features li {
+                font-size: 13px;
+            }
         }
     </style>
 </head>
@@ -488,7 +692,7 @@
     </div>
     </div>
 
-    <!-- Popup Modal -->
+    <!-- Popup -->
     <div class="popup-modal" id="productModal">
         <div class="popup-content">
             <div class="popup-header">
@@ -501,12 +705,12 @@
                     Card yang menarik dengan desain modern dan responsif.
                 </p>
                 <div class="popup-features">
-                    <h3>✨ Fitur Unggulan:</h3>
+                    <h3>✨ Sejarah:</h3>
                     <ul id="popupFeatures">
-                        <li>Desain modern dan elegan</li>
-                        <li>Responsif di semua perangkat</li>
-                        <li>Mudah dikustomisasi</li>
-                        <li>Performa optimal</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
             </div>

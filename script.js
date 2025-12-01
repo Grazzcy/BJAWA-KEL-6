@@ -93,11 +93,11 @@ const productData = {
         title: 'ꦒꦸꦝꦼꦒ꧀ (gudeg)',
         description: 'Gudeg punika minangka panganan tradisional saking Ngayogyakarta. Panganan menika dipun damel saking gori enom ingkang dipun masak mawi santan, gula jawa, saha bumbu-bumbu rempah. Rasane legi lan lembut, lan gadhah aroma ingkang khas. Biasanipun gudeg dipun sajiaken kaliyan sega putih, ayam kampung, telur pindang, lan sambel goreng krecek. Panganan menika dados salah satunggaling ciri khas kulinering Yogyakarta ingkang misuwur.',
         features: [
-            'Terbuat dari nangka muda pilihan',
-            'Dimasak dengan santan kelapa segar',
-            'Bumbu rempah tradisional asli',
-            'Cita rasa manis khas Yogyakarta',
-            'Bisa tahan hingga 3 hari'
+            'Asalipun saking kitha Yogyakarta.',
+            'Kawiwitan abad kaping-16 nalika pambangunan Kraton Mataram.',
+            'Dipun-ginakaken para abdi lan prajurit kangge dhaharan bebarengan.',
+            'Gadhah ciri rasa manis-gurih khas Yogyakarta.',
+            'Dados panganan khas Yogyakarta ingkang misuwur dumugi samenika.'
         ]
     },
     'ꦒꦼꦧ꧀ꦭꦺꦏ꧀ (geblek)': {
@@ -106,11 +106,11 @@ const productData = {
         title: 'ꦒꦼꦧ꧀ꦭꦺꦏ꧀ (geblek)',
         description: 'Geblek punika panganan tradisional saking wilayah Kulon Progo. Panganan menika dipun damel saking adonan pati ketela pohon ingkang dipun campur kaliyan bumbu-bumbu prasaja, lajeng dipun bentuk melingkar lan dipun goreng ngantos garing. Rasane gurih saha renggi, lan asring dipun dhahar minangka cemilan utawi panganan saékang dipun iringi banyu teh. Geblek ugi dados salah satunggaling ciri khas kulinering Kulon Progo ingkang taksih dipun tresnani dening masyarakat.',
         features: [
-            'Terbuat dari pati ketela pohon asli',
-            'Tekstur renyah dan gurih',
-            'Tanpa bahan pengawet',
-            'Cocok untuk camilan keluarga',
-            'Khas Kulon Progo yang autentik'
+            'Asalipun saking Kulon Progo, DIY.',
+            'Wonten wiwit jaman biyèn minangka cemilan masyarakat tani.',
+            'Bentukipun khas kados angka wolu.',
+            'Gadhah rasa gurih lan garing.',
+            'Dados jajanan khas Kulon Progo ingkang dados identitas kulinèripun.'
         ]
     },
     'ꦠꦶꦮꦸꦭ꧀ (tiwul)': {
@@ -119,11 +119,11 @@ const productData = {
         title: 'ꦠꦶꦮꦸꦭ꧀ (tiwul)',
         description: 'Tiwul punika panganan tradisional saking masyarakat Jawa, mliginipun ing tlatah Gunungkidul. Panganan menika dipun damel saking gaplek ingkang dipun giling dados oyak, lajeng dipun kukus ngantos mateng. Rasane khas saha gadhah tekstur ingkang lembut nanging rada granula. Tiwul asring dipun sajiaken minangka penggantos sega, lan saged dipun padoni kaliyan sayur, iwak asin, utawi gula jawa miturut selera. Panganan menika nglambangaken kesederhanaan lan kearifan lokal masyarakat.',
         features: [
-            'Makanan pokok alternatif yang sehat',
-            'Tinggi serat dan rendah kalori',
-            'Terbuat dari singkong pilihan',
-            'Bisa disajikan dengan berbagai lauk',
-            'Kearifan lokal Gunungkidul'
+            'Asalipun saking daerah gampingan Jawa (Gunungkidul, Wonogiri, Pacitan).',
+            'Wonten jaman biyèn dados pangan pokok nalika kakirangan beras.',
+            'Rasanipun legi alami lan ngenyangaken.',
+            'Dipun-sebat minangka panganan khas masyarakat pegunungan.',
+            'Taksih lestari minangka panganan tradisional dumugi samenika.'
         ]
     },
     'ꦧꦏ꧀ꦥꦶꦲ (bakpia)': {
@@ -132,11 +132,11 @@ const productData = {
         title: 'ꦧꦏ꧀ꦥꦶꦲ (bakpia)',
         description: 'Bakpia punika panganan tradisional ingkang misuwur saking kitha Ngayogyakarta. Panganan menika wujud kue alit berisi isen-isen kados ta kacang hijau, coklat, keju, utawi rasa-rasa sanès miturut perkembangan jaman. Kulité tipis lan garing, dene isenipun lembut saha manis. Bakpia asring dipun dadosaken oleh-oleh khas Yogyakarta amargi rasane ingkang nikmat lan dipun remeni kathah tiyang.',
         features: [
-            'Kulit tipis dan garing sempurna',
-            'Isian lembut dengan berbagai varian',
-            'Kacang hijau, coklat, keju tersedia',
-            'Oleh-oleh khas Yogyakarta',
-            'Kemasan higienis dan menarik'
+            'Asal-usulipun saking jajanan Tiongkok.',
+            'Dipun-ngrembakaaken dening perantau Tionghoa ing Yogyakarta.',
+            'Kampung Pathuk dados pusat pabrikan bakpia.',
+            'Rasanipun empuk lan legi kanthi kathah variasi.',
+            'Dados oleh-oleh khas Yogyakarta ingkang kondhang.'
         ]
     },
     'ꦒꦼꦛꦸꦏ꧀ (gethuk)': {
@@ -145,11 +145,11 @@ const productData = {
         title: 'ꦒꦼꦛꦸꦏ꧀ (gethuk)',
         description: 'Gethuk punika panganan tradisional ingkang asalipun saking bahan ketela pohon. Ketela punika dipun kukus, dipun tumbuk ngantos halus, lajeng dipun campur kaliyan gula jawa utawi gula pasir sarta parutan klapa. Rasane manis, lembut, lan gadhah aroma khas saking bahan alami. Gethuk asring dipun sajiaken minangka cemilan saben dinten lan dados salah satunggaling jajanan tradisional ingkang taksih dipun remeni déning masyarakat.',
         features: [
-            'Tekstur lembut dan manis alami',
-            'Terbuat dari singkong segar',
-            'Dicampur gula jawa asli',
-            'Taburan kelapa parut wangi',
-            'Jajanan tradisional favorit'
+            'Asalipun saking tradisi masyarakat pedesaan Jawa.',
+            'Wonten minangka pangan alternatif jaman biyèn.',
+            'Gadhah tekstur lembut lan rasa prasaja.',
+            'Dipun-sajikaken kanthi bentuk sederhana.',
+            'Varian misuwuripun inggih punika Gethuk Lindri saking Magelang.'
         ]
     },
     'ꦮꦗꦶꦏ꧀ (wajik)': {
@@ -158,11 +158,11 @@ const productData = {
         title: 'ꦮꦗꦶꦏ꧀ (wajik)',
         description: 'Wajik punika salah satunggaling panganan tradisional ingkang dipun damel saking beras ketan ingkang dipun masak mawi santan lan gula jawa. Panganan menika gadhah rasa manis lan tekstur ingkang lengket nanging lembut. Wajik asring dipun bentuk dados potongan segi papat lan dipun sajiaken nalika acara-acara adat utawi minangka suguhan dhahar tamu. Panganan menika nggambaraken kesederhanaan lan rasa guyub ing budaya masyarakat Jawa.',
         features: [
-            'Beras ketan berkualitas premium',
-            'Santan kelapa segar pilihan',
-            'Gula jawa asli untuk rasa manis',
-            'Tekstur lengket yang pas',
-            'Cocok untuk acara adat dan hajatan'
+            'Jajanan tradisional Jawa saking jaman biyèn.',
+            'Dipun-bentuk khas kados belah ketupat.',
+            'Asring dipun-hidangaken wonten upacara adat.',
+            'Gadhah makna kekompakan lan panyawiji.',
+            'Taksih lestari ing acara adat lan kendhuri dumugi samenika.'
         ]
     }
 };
@@ -213,6 +213,23 @@ function closePopup() {
     document.body.style.overflow = 'auto'; // Re-enable scrolling
 }
 
+// Intersection Observer untuk animasi saat scroll
+const observerOptions = {
+    threshold: 0.2,
+    rootMargin: '0px 0px -100px 0px'
+};
+
+const scrollObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        } else {
+            // Hapus class visible agar animasi bisa dijalankan lagi
+            entry.target.classList.remove('visible');
+        }
+    });
+}, observerOptions);
+
 // Initialize popup functionality
 document.addEventListener('DOMContentLoaded', function() {
     // Add event listeners to all card buttons
@@ -244,4 +261,19 @@ document.addEventListener('DOMContentLoaded', function() {
             closePopup();
         }
     });
+
+    // Animasi scroll untuk semua card dengan delay bertahap
+    const cards = document.querySelectorAll('.card');
+    cards.forEach((card, index) => {
+        card.classList.add('animate-element');
+        card.style.transitionDelay = `${index * 0.15}s`;
+        scrollObserver.observe(card);
+    });
+
+    // Animasi untuk search box
+    const searchContainer = document.querySelector('.search-container');
+    if (searchContainer) {
+        searchContainer.classList.add('animate-element');
+        scrollObserver.observe(searchContainer);
+    }
 });

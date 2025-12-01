@@ -1,3 +1,6 @@
+/* ================= FONT IMPORT ================= */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Javanese&display=swap');
+
 /* ================= RESET ================= */
 * {
     margin: 0;
@@ -75,9 +78,13 @@ body {
 }
 
 .judul-atas {
-    font-family: "Javanese Text", serif;
+    font-family: "Noto Sans Javanese", "Javanese Text", serif;
     text-align: center;
     font-size: 50px;
+    word-break: normal;
+    overflow-wrap: anywhere;
+    hyphens: none;
+    line-break: anywhere;
 }
 
 /* ================= ANIMASI SCROLL ================= */
@@ -119,15 +126,23 @@ body {
 
 .judul-aksara {
     font-size: 35px;
+    font-family: "Noto Sans Javanese", "Javanese Text", serif;
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: anywhere;
 }
 
 .deskripsi {
     margin-bottom: 5rem;
+    font-family: "Noto Sans Javanese", "Javanese Text", serif;
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: anywhere;
 }
 
 .gambar-makanan {
-    width: 20rem;
-    height: 20rem;
+    width: 25rem;
+    height: 25rem;
     max-width: 45%;
     border-radius: 50%;
     margin-bottom: 50px;
@@ -150,44 +165,59 @@ body {
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     margin-bottom: 20px;
     max-width: 90%;
-    width: 100%;
+    width: auto;
+    min-width: 80%;
 }
 
 .judul-box {
     background: #fff;
-    width: fit-content;
+    width: auto;
+    max-width: 90%;
     padding: 10px 25px;
     margin: 0 auto 20px;
     border-radius: 20px;
     font-size: 22px;
-    font-family: "Javanese Text";
+    font-family: "Noto Sans Javanese", "Javanese Text", serif;
     border: 2px solid #b3916e;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: anywhere;
 }
 
 /* ================= HALAMAN 3 ================= */
 .list-box {
     background: #fff;
-    width: fit-content;
+    width: auto;
+    min-width: 60%;
+    max-width: 90%;
     padding: 20px 25px;
     margin: 0 auto 20px;
     border-radius: 20px;
     font-size: 22px;
-    font-family: "Javanese Text";
+    font-family: "Noto Sans Javanese", "Javanese Text", serif;
     border: 2px solid #b3916e;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: anywhere;
 }
 
 .judul-list {
     background: #fff;
-    width: fit-content;
+    width: auto;
+    max-width: 90%;
     padding: 10px 25px;
     margin: 80px auto 20px;
     border-radius: 20px;
     font-size: 22px;
-    font-family: "Javanese Text";
+    font-family: "Noto Sans Javanese", "Javanese Text", serif;
     border: 2px solid #b3916e;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: anywhere;
+    text-align: center;
 }
 
 .list-box a {
@@ -216,49 +246,170 @@ ol {
     margin-left: 40px;
 }
 
+ol li {
+    font-family: "Noto Sans Javanese", "Javanese Text", serif;
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: anywhere;
+}
+
+.paragraf {
+    font-family: "Noto Sans Javanese", "Javanese Text", serif;
+    word-break: normal;
+    overflow-wrap: anywhere;
+    line-break: anywhere;
+}
+
 /* ==========================================================
    ===============   RESPONSIVE MOBILE   =====================
    ==========================================================*/
 
 @media (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+    .halaman {
+        padding: 20px 10px;
+    }
+
     .judul-atas {
-        font-size: 32px;
+        font-size: 28px;
+        padding: 10px;
+        line-height: 1.5;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .konten-row {
         flex-direction: column;
         padding: 15px;
+        margin: 20px 10px;
+        min-height: auto;
+        width: calc(100% - 20px);
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .box-teks {
-        font-size: 18px;
-        margin-top: 1rem;
+        font-size: 16px;
+        margin-top: 0;
         width: 100%;
+        padding: 15px;
+        line-height: 1.7;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+        box-sizing: border-box;
     }
 
     .judul-aksara {
-        font-size: 25px;
+        font-size: 22px;
+        margin-bottom: 12px;
+        line-height: 1.5;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .deskripsi {
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
 
     .gambar-makanan {
-        width: 12rem;
-        height: 12rem;
-        margin-left: 0;
+        width: 200px;
+        height: 200px;
+        margin: 15px auto;
+        max-width: 100%;
+        display: block;
     }
 
     .judul-list {
-        margin-top: 50px;
+        margin-top: 30px;
+        font-size: 18px;
+        padding: 10px 15px;
+        width: calc(100% - 20px);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
-    .list-box,
-    .kertas {
-        width: 90%;
+    .judul-box {
         font-size: 18px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        width: calc(100% - 20px);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .list-box {
+        width: calc(100% - 20px);
+        max-width: 100%;
+        font-size: 16px;
+        padding: 15px;
+        line-height: 1.6;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .kertas {
+        width: calc(100% - 20px);
+        max-width: 100%;
+        font-size: 16px;
+        padding: 15px;
+        line-height: 1.7;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .list-box ol {
+        margin-left: 20px;
+        padding-right: 5px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .list-box li {
+        margin-bottom: 8px;
+        line-height: 1.6;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+        box-sizing: border-box;
+    }
+
+    .paragraf {
+        text-align: left;
+        line-height: 1.8;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        white-space: normal;
     }
 }
 
@@ -269,21 +420,69 @@ ol {
 
 @media (max-width: 480px) {
 
+    .halaman {
+        padding: 15px 5px;
+    }
+
     .judul-atas {
-        font-size: 28px;
+        font-size: 24px;
+        line-height: 1.4;
+        padding: 8px;
+    }
+
+    .konten-row {
+        margin: 15px 5px;
+        padding: 12px;
+        width: calc(100% - 10px);
     }
 
     .box-teks {
-        font-size: 16px;
+        font-size: 15px;
+        padding: 12px;
     }
 
     .gambar-makanan {
-        width: 10rem;
-        height: 10rem;
+        width: 180px;
+        height: 180px;
+        margin: 10px auto;
     }
 
     .judul-aksara {
-        font-size: 22px;
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .judul-list,
+    .judul-box {
+        font-size: 16px;
+        padding: 8px 12px;
+        width: calc(100% - 10px);
+    }
+
+    .list-box,
+    .kertas {
+        font-size: 15px;
+        padding: 12px;
+        width: calc(100% - 10px);
+    }
+
+    .list-box ol {
+        margin-left: 18px;
+    }
+
+    .list-box li {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 15px;
+    }
+
+    .paragraf {
+        font-size: 15px;
+        line-height: 1.7;
     }
 }
 
